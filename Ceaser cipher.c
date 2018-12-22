@@ -6,7 +6,7 @@ int main()
     int i, key;
     
     printf("Enter a message to encrypt: ");
-    gets(message);
+    fgets(message, 100, stdin);
     printf("Enter key: ");
     scanf("%d", &key);
     
@@ -34,5 +34,6 @@ int main()
     }
     
     printf("Encrypted message: %s", message);
-    
-    return 0;
+
+return 0;
+}
